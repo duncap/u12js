@@ -1,0 +1,10 @@
+[
+  {
+    "name": "greet",
+    "execute": "console.log('Hello, world!')"
+  },
+  {
+    "name": "cheer",
+    "execute": "console.log('You can do it!')"
+  }
+]

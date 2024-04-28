@@ -1,0 +1,30 @@
+[
+  {
+    "name": "addTodo",
+    "execute": "
+      const task = prompt('Enter a task:');
+      if (task) {
+        tasks.push(task);
+        console.log('Added task: ' + task + ' as number ' + tasks.length);
+      } else {
+        console.log('No task entered');
+      }
+    "
+  },
+  {
+    "name": "removeTodo",
+    "execute": "const index = parseInt(prompt('Which task number to remove?')) - 1; if (index >= 0 && index < tasks.length) { console.log('Removed task: ' + tasks.splice(index, 1)[0] + ' from number ' + (index + 1)); } else { console.log('Invalid task number'); } "
+  },
+  {
+    "name": "listTodos",
+    "execute": "
+      if (tasks.length > 0) {
+        tasks.forEach((task, index) => {
+          console.log((index + 1) + ': ' + task);
+        });
+      } else {
+        console.log('No tasks to list');
+      }
+    "
+  }
+]
