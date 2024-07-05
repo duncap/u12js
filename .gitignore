@@ -1,0 +1,6 @@
+echo ".DS_Store" > .gitignore
+echo ".Spotlight-V100" >> .gitignore
+echo ".Trashes" >> .gitignore
+echo ".fseventsd" >> .gitignore
+echo ".DocumentRevisions-V100" >> .gitignore
+echo ".TemporaryItems" >> .gitignore
