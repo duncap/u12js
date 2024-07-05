@@ -8,6 +8,7 @@ Before you can use u12.js, ensure you have the following installed on your syste
 
 - Node.js
 - npm (Node Package Manager)
+- make
 
 ## How-to
 
@@ -26,17 +27,18 @@ Move into the cloned repository directory:
 ```bash
 cd u12js
 ```
-### 3. Grant Executability
-Make the u12.js script executable:
+### 3. Run makefile
+Run makefile to auto-compile all processes.
 
 ```bash
-chmod +x u12.js
+make
 ```
-### 4. Run the Script
-If everything is set up correctly, you can now run the u12.js script. Running it without any arguments should display the usage information:
 
-```bash 
-./u12.js
+### 4. Test
+You should now be able to run u12.js in your terminal. To check, run:
+
+```bash
+u12.js
 ```
 ## Fields
 When running u12.js, you need to provide three fields:
@@ -61,7 +63,7 @@ Provide the path to your file relative to the cloned repository directory. This 
 With all fields filled out, you can submit your offer like this:
 
 ```bash
-./u12.js <domain> <offer> <path-to-file>
+u12.js <domain> <offer> <path-to-file>
 ```
 Replace <domain>, <offer>, and <path-to-file> with your selected network's domain, offer description, and file path.
 

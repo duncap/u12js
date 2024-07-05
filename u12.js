@@ -5,7 +5,7 @@ const FormData = require('form-data');
 const fs = require('fs');
 
 if (process.argv.length < 5) {
-  console.error('Usage: ./u12.js <domain> <offer> <path-to-file>');
+  console.error('Usage: u12.js <domain> <offer> <path-to-file>');
   process.exit(1);
 }
 
