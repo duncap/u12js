@@ -28,10 +28,10 @@ Move into the cloned repository directory:
 cd u12js
 ```
 ### 3. Run makefile
-Run makefile to auto-compile all processes.
+Run makefile to auto-compile all processes (feel free to add or remove sudo if make doesn't have the correct permissions).
 
 ```bash
-make
+sudo make
 ```
 
 ### 4. Test

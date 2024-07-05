@@ -6,15 +6,14 @@ all: install
 
 # Install target
 install:
-	# Ensure u12.js is executable
 	chmod +x u12.js
-	# Create a symlink in /usr/local/bin
 	ln -sf $(CURDIR)/u12.js $(TARGET)
+	@echo "Installed u12.js!"
 
 # Uninstall target
 uninstall:
-	# Remove the symlink
 	rm -f $(TARGET)
+	@echo "Uninstalled u12.js."
 
 # Help target
 help:
